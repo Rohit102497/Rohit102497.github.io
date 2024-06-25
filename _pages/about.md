@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Scalable AI Models, Online Learning, Varying Feature Space, Time Series, Large Language Models
+subtitle: Scalable AI Models, Online Learning, Varying Feature Space, Time Series, LLMs
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -14,14 +14,14 @@ profile:
     <p>Hansine Hansens Veg 18</p>
     <p>Tromsø, Norway 9019</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
 I am Rohit Agarwal, a 4th-Year Ph.D. student at the Department of Computer Science, UiT Tromsø, Norway. I work on building scalable AI architectures for complex biological systems. I work in the [Bio-AI](https://www.bioailab.org/) and [3DNanoscopy](https://www.3dnanoscopy.com/) Lab under the supervision of [Dilip K. Prasad](https://sites.google.com/site/dilipprasad/), [Alexander Horsch](https://en.uit.no/ansatte/alexander.horsch) and [Krishna Agarwal](https://sites.google.com/site/uthkrishth/krishnaagarwal).
 
-I am interested in making dynamic deep learning models where the number of inputs to a model keeps changing with streaming data. I call them [Haphazard Inputs](https://openreview.net/pdf?id=R9CgBkeZ6Z). Along with these, I have experience in computer vision and natural language processing. Recently, I am also exploring large language models with a focus on continual learning and quantization.
+I am interested in making dynamic deep learning models where the number of inputs to a model keeps changing with streaming data. I call them [Haphazard Inputs](https://openreview.net/pdf?id=R9CgBkeZ6Z). Along with these, I have experience in computer vision and natural language processing. Recently, I am also exploring large language models (LLMs) with a focus on continual learning and quantization.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
