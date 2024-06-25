@@ -167,16 +167,20 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+  # - name: medium.com
+  #   rss_url: https://medium.com/@al-folio/feed
   - name: PhD - Self contemplation
     posts:
       - url: https://rohit-agarwal.medium.com/why-phd-self-contemplation-4c7fcfaae5be
         published_date: 2021-05-22
-  - name: Google Blog
+  - name: Challenges of Early Career Researchers
     posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+      - url: https://www.3dnanoscopy.com/on-starting-a-career-in-research/
+        published_date: 2024-05-02
+  # - name: Google Blog
+  #   posts:
+  #     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+  #       published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
