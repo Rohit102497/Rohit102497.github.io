@@ -322,8 +322,8 @@ display_categories: []
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Agarwal]
+  first_name: [Rohit, R.]
 
   style: apa
   locale: en
