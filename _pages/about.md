@@ -9,10 +9,10 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Department of Computer Science, UiT Tromsø</p>
-    <p>Hansine Hansens Veg 18</p>
-    <p>Tromsø, Norway 9019</p>
+  # more_info: >
+  #   <p>Department of Computer Science, UiT Tromsø</p>
+  #   <p>Hansine Hansens Veg 18</p>
+  #   <p>Tromsø, Norway 9019</p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
