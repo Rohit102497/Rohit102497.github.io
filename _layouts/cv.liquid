@@ -5,15 +5,6 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {{ page.title }}
-      {% if page.detailed_cv_pdf %}
-        <a
-          href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="float-right"
-          ><i class="fa-solid fa-file-pdf"></i
-        ></a>
-      {% endif %}
     </h1>
     {% if page.description %}
       <p class="post-description">{{ page.description }}</p>
@@ -24,19 +15,28 @@ layout: default
   {% if page.detailed_cv_pdf %}
     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The detailed CV is provided 
-      <a href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url}}">here</a>.
+      <a href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="float-right">here</a>.
     </h6>
   {% endif %}
   {% if page.2page_cv_pdf %}
     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The 2-page CV is provided 
-      <a href="{{ page.2page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}">here</a>.
+      <a href="{{ page.2page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="float-right">here</a>.
     </h6>
   {% endif %}
   {% if page.1page_cv_pdf %}
     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The 1-page CV is provided 
-      <a href="{{ page.1page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}">here</a>.
+      <a href="{{ page.1page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="float-right">here</a>.
     </h6>
   {% endif %}
 </div>
