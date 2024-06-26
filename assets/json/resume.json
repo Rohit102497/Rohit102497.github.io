@@ -29,10 +29,12 @@
       "url": "https://en.uit.no/startsida",
       "area": "Artificial Intelligence",
       "studyType": "PhD",
-      "startDate": "June 2021",
-      "endDate": "June 2025"
+      "startDate": "2021.06",
+      "endDate": "2025.06",
       // "score": "10",
       // "courses": ["Theory of Relativity"],
+      "summary": "Scalable AI architectures for modeling complex dynamic systems",
+      "title": "Developing machine learning architectures and concepts to model varying feature space in online learning."
     }
   ],
   "work": [
