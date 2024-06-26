@@ -31,6 +31,15 @@
                   </td>
                 </tr>
               {% endif %}
+              {% if content.degreeurl %}
+                <tr>
+                  <td>
+                    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+                      <a href="{{ content.degreeurl }}">Degree</a>,
+                    </h6>
+                  </td>
+                </tr>
+              {% endif %}
             </tbody>
           </table>
         </div>

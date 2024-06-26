@@ -52,6 +52,7 @@
       // "courses": ["Theory of Relativity"],
       "title": "Deep learning for streaming classification",
       "summary": "Proposed a deep learning model based on the hedge algorithm and online gradient descent to model dimension-varying inputs in online learning.",
+      "degreeurl": "https://drive.google.com/file/d/1MgDmWRvybl7QM-ps1CxXNRnnQpyXKsl1/view?usp=sharing",
       "supervisor1": "Garib Nath Singh",
       "supervisor1URL": "https://iitism.irins.org/profile/44344",
       "supervisor2": "Dilip K. Prasad",
