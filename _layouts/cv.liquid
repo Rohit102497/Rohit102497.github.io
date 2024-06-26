@@ -5,9 +5,9 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {{ page.title }}
-      {% if page.cv_pdf %}
+      {% if page.detailed_cv_pdf %}
         <a
-          href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
+          href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
           target="_blank"
           rel="noopener noreferrer"
           class="float-right"
@@ -20,3 +20,11 @@ layout: default
     {% endif %}
   </header>
 </div>
+<div class="row">
+  {% if page.detailed_cv_pdf %}
+    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+      The detailed CV is provided <a href="{{ page.detailed_cv_pdf }}">here</a>
+    </h6>
+  {% endif %}
+</div>
+

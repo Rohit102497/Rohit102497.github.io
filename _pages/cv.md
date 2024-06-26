@@ -4,8 +4,10 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 3
-cv_pdf: DetailedCV.pdf
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+detailed_cv_pdf: DetailedCV.pdf
+1page_cv_pdf: CV_1page.pdf
+2page_cv_pdf: CV_2page.pdf
+description: Three different forms of CV is provided.
 toc:
   sidebar: left
 ---
