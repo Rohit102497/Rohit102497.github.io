@@ -63,7 +63,12 @@
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.institution }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ content.area }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: bold">Title: {{ content.title }}</h6>
+          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: bold">
+            Title: {{ content.title }}
+            {% if content.titleurl %} 
+              <a href="{{ content.titleurl }}">Link</a>
+            {% endif %}
+          </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Objective: {{ content.summary }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
             Supervisors:
