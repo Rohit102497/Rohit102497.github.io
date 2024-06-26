@@ -1,12 +1,14 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: I am a teaching assitant as the Department of Computer Science, UiT
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+Artificial Intelligence, AI - Methods and Applications (INF-2600-1 23V) <br>
+Spring 2023, 2024
 
-Organize your courses by years, topics, or universities, however you like!
+Cloud and Big Data Technology (INF-2220-1 21H) <br>
+Fall 2021, 2022, 2023
