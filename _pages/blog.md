@@ -36,7 +36,7 @@ pagination:
       {% for tag in site.display_tags %}
         <li>
           <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
+        <!-- </li> -->
         {% unless forloop.last %}
           <p>&bull;</p>
         {% endunless %}
