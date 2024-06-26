@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: I am a teaching assitant as the Department of Computer Science, UiT
+description: I am a teaching assitant at the Department of Computer Science, UiT Tromsø, Norway
 nav: true
 nav_order: 4
 ---
