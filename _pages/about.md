@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Scalable AI Models, Online Learning, Varying Feature Space, Time Series, LLMs
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
