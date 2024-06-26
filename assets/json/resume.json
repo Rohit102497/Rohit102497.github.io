@@ -31,8 +31,6 @@
       "studyType": "PhD",
       "startDate": "2021.06",
       "endDate": "2025.06",
-      // "score": "10",
-      // "courses": ["Theory of Relativity"],
       "title": "Scalable AI architectures for modeling complex dynamic systems",
       "summary": "Developing machine learning architectures and concepts to model varying feature space in online learning.",
       "supervisor1": "Dilip K. Prasad",
@@ -41,6 +39,23 @@
       "supervisor2URL": "https://uit.no/ansatte/alexander.horsch",
       "supervisor3": "Krishna Agarwal",
       "supervisor3URL": "https://sites.google.com/site/uthkrishth/krishnaagarwal"
+    },
+    {
+      "institution": "Indian Institute of Technology (ISM) Dhanbad",
+      "location": "Dhanbad, India",
+      "url": "https://www.iitism.ac.in/",
+      "area": "Mathematics and Computing",
+      "studyType": "Integrated Masters",
+      "startDate": "2021.06",
+      "endDate": "2025.06",
+      "score": "A+",
+      // "courses": ["Theory of Relativity"],
+      "title": "Deep learning for streaming classification",
+      "summary": "Proposed a deep learning model based on the hedge algorithm and online gradient descent to model dimension-varying inputs in online learning.",
+      "supervisor1": "Garib Nath Singh",
+      "supervisor1URL": "https://iitism.irins.org/profile/44344",
+      "supervisor2": "Dilip K. Prasad",
+      "supervisor2URL": "https://sites.google.com/site/dilipprasad/"
     }
   ],
   "work": [
