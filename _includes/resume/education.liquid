@@ -35,8 +35,15 @@
                 <tr>
                   <td>
                     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                      <a href="{{ content.degreeurl }}">Degree</a>,
+                      <a href="{{ content.degreeurl }}">Degree</a>
                     </h6>
+                  </td>
+                </tr>
+              {% endif %}
+              {% if content.goldmedalist %}
+                <tr>
+                  <td>
+                    <p>Gold Medalist</p>
                   </td>
                 </tr>
               {% endif %}
@@ -52,9 +59,16 @@
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: bold">Title: {{ content.title }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Objective: {{ content.summary }}</h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-            Supervisors: <a href="{{ content.supervisor1URL }}">{{ content.supervisor1 }}</a>,
-            <a href="{{ content.supervisor2URL }}">{{ content.supervisor2 }}</a>,
-            <a href="{{ content.supervisor3URL }}">{{ content.supervisor3 }}</a>,
+            Supervisors:
+            {% if content.supervisor1 %} 
+              <a href="{{ content.supervisor1URL }}">{{ content.supervisor1 }}</a>
+            {% endif %}
+            {% if content.supervisor2 %}
+              <a href="{{ content.supervisor2URL }}">, {{ content.supervisor2 }}</a>
+            {% endif %}
+            {% if content.supervisor3 %}
+              <a href="{{ content.supervisor3URL }}">, {{ content.supervisor3 }}</a>
+            {% endif %}
           </h6>
           <ul class="items">
             {% for item in content.courses %}
