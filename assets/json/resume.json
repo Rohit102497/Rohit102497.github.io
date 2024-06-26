@@ -48,7 +48,7 @@
       "studyType": "Integrated Masters",
       "startDate": "2021.06",
       "endDate": "2025.06",
-      "score": "A+",
+      "score": "GPA: 9.49/10",
       // "courses": ["Theory of Relativity"],
       "title": "Deep learning for streaming classification",
       "summary": "Proposed a deep learning model based on the hedge algorithm and online gradient descent to model dimension-varying inputs in online learning.",
