@@ -33,8 +33,14 @@
       "endDate": "2025.06",
       // "score": "10",
       // "courses": ["Theory of Relativity"],
-      "summary": "Scalable AI architectures for modeling complex dynamic systems",
-      "title": "Developing machine learning architectures and concepts to model varying feature space in online learning."
+      "title": "Scalable AI architectures for modeling complex dynamic systems",
+      "summary": "Developing machine learning architectures and concepts to model varying feature space in online learning.",
+      "supervisor1": "Dilip K. Prasad",
+      "supervisor1URL": "https://sites.google.com/site/dilipprasad/",
+      "supervisor2": "Alexander Horsch",
+      "supervisor2URL": "https://uit.no/ansatte/alexander.horsch",
+      "supervisor3": "Krishna Agarwal",
+      "supervisor3URL": "https://sites.google.com/site/uthkrishth/krishnaagarwal"
     }
   ],
   "work": [
