@@ -23,7 +23,20 @@ layout: default
 <div class="row">
   {% if page.detailed_cv_pdf %}
     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-      The detailed CV is provided <a href="{{ page.detailed_cv_pdf }}">here</a>
+      The detailed CV is provided 
+      <a href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url}}">here</a>.
+    </h6>
+  {% endif %}
+  {% if page.2page_cv_pdf %}
+    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+      The 2-page CV is provided 
+      <a href="{{ page.2page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}">here</a>.
+    </h6>
+  {% endif %}
+  {% if page.1page_cv_pdf %}
+    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+      The 1-page CV is provided 
+      <a href="{{ page.1page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}">here</a>.
     </h6>
   {% endif %}
 </div>
