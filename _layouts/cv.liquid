@@ -13,15 +13,15 @@ layout: default
 </div>
 <div class="row">
   {% if page.detailed_cv_pdf %}
-    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+    <p class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The detailed CV is provided 
       <a href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
         target="_blank"
         rel="noopener noreferrer"
-        class="float-right">here</a>.
-    </h6>
+      >here</a>.
+      <br>
+    </p>
   {% endif %}
-  <br>
   {% if page.2page_cv_pdf %}
     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The 2-page CV is provided 
@@ -36,9 +36,9 @@ layout: default
     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The 1-page CV is provided 
       <a href="{{ page.1page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="float-right">here</a>.
+      target="_blank"
+      rel="noopener noreferrer">here</a>
+      .
     </h6>
   {% endif %}
 </div>
