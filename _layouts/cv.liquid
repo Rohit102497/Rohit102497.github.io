@@ -23,23 +23,25 @@ layout: default
     </p>
   {% endif %}
   {% if page.2page_cv_pdf %}
-    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+    <p class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The 2-page CV is provided 
       <a href="{{ page.2page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
         target="_blank"
         rel="noopener noreferrer"
-        class="float-right">here</a>.
-    </h6>
+        >here</a>.
+      <br>
+    </p>
   {% endif %}
   <br>
   {% if page.1page_cv_pdf %}
-    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+    <p class="ml-1 ml-md-4" style="font-size: 0.95rem">
       The 1-page CV is provided 
       <a href="{{ page.1page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
       target="_blank"
       rel="noopener noreferrer">here</a>
       .
-    </h6>
+      <br>
+    </p>
   {% endif %}
 </div>
 
