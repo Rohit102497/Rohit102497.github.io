@@ -177,10 +177,18 @@ external_sources:
     posts:
       - url: https://www.3dnanoscopy.com/on-starting-a-career-in-research/
         published_date: 2024-05-02
+  - name: How early career researchers think about social responsibility – a group discussion
+    posts:
+      - url: https://www.3dnanoscopy.com/how-early-career-researchers-think-about-social-responsibility-a-group-discussion/
+        published_date: 2024-07-24
+  - name: Discussions in Transdisciplinary Settings
+    posts:
+      - url: https://www.3dnanoscopy.com/how-early-career-researchers-think-about-social-responsibility-a-group-discussion/
+        published_date: 2024-07-24
   # - name: Google Blog
   #   posts:
-  #     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-  #       published_date: 2024-05-14
+  #     - url: https://www.3dnanoscopy.com/discussions-in-transdisciplinary-settings/
+  #       published_date: 2024-09-25
 
 # -----------------------------------------------------------------------------
 # Newsletter
