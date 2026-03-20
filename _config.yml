@@ -173,6 +173,7 @@ external_sources:
     posts:
       - url: https://rohit-agarwal.medium.com/why-phd-self-contemplation-4c7fcfaae5be
         published_date: 2021-05-22
+        title: "Why PhD: Self contemplation"
   - name: Challenges of Early Career Researchers
     posts:
       - url: https://www.3dnanoscopy.com/on-starting-a-career-in-research/
@@ -216,7 +217,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false  

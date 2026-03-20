@@ -17,7 +17,7 @@ profile:
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 I am Rohit Agarwal, an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), Department of Computer Science, UiT The Arctic University of Norway, Tromsø. I completed my Ph.D. in Artificial Intelligence in 2025 under the supervision of [Dilip K. Prasad](https://sites.google.com/site/dilipprasad/), [Alexander Horsch](https://en.uit.no/ansatte/alexander.horsch), and [Krishna Agarwal](https://sites.google.com/site/uthkrishth/krishnaagarwal).

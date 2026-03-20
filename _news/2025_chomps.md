@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Organized the **CHOMPS Workshop** at AACL, Dec 2025.
+Organized the **[CHOMPS Workshop](https://chomps2025.github.io/)** at AACL, Dec 2025.
