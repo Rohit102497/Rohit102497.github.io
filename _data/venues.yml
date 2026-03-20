@@ -6,16 +6,19 @@
   url: https://journals.aps.org/
 
 "Vision":
-  color: "#009f36"
+  color: "#2e8b57"
 
 "Haphazard Inputs":
-  color: "#FF0000"
+  color: "#e05c4b"
 
 "ISTS":
-  color: "#FFFF00"
+  color: "#c47e17"
 
 "NLP":
-  color: "#FFC0CB"
-  
+  color: "#4a90a4"
+
 "Book":
-  color: "#FF00FF"
+  color: "#7b5ea7"
+
+"LLM":
+  color: "#3d7ebf"
