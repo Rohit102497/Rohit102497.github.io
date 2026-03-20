@@ -3,45 +3,46 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {{ page.title }}
-    </h1>
+    <h1 class="post-title">{{ page.title }}</h1>
     {% if page.description %}
       <p class="post-description">{{ page.description }}</p>
     {% endif %}
   </header>
-</div>
-<div class="row">
-  {% if page.detailed_cv_pdf %}
-    <p class="ml-1 ml-md-4" style="font-size: 0.95rem">
-      The detailed CV is provided 
-      <a href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >here</a>.
-      <br>
-    </p>
-  {% endif %}
-  {% if page.2page_cv_pdf %}
-    <p class="ml-1 ml-md-4" style="font-size: 0.95rem">
-      The 2-page CV is provided 
-      <a href="{{ page.2page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-        target="_blank"
-        rel="noopener noreferrer"
-        >here</a>.
-      <br>
-    </p>
-  {% endif %}
-  <br>
-  {% if page.1page_cv_pdf %}
-    <p class="ml-1 ml-md-4" style="font-size: 0.95rem">
-      The 1-page CV is provided 
-      <a href="{{ page.1page_cv_pdf | prepend: 'assets/pdf/' | relative_url}}"
-      target="_blank"
-      rel="noopener noreferrer">here</a>
-      .
-      <br>
-    </p>
-  {% endif %}
-</div>
 
+  <!-- Download buttons -->
+  <div class="cv-download-buttons mb-4" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+    {% if page.detailed_cv_pdf %}
+      <a href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+         download
+         class="btn btn-sm"
+         style="border: 1px solid var(--global-theme-color); color: var(--global-theme-color);">
+        <i class="fas fa-download"></i> Detailed CV
+      </a>
+    {% endif %}
+    {% if page.cv_pdf %}
+      <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+         download
+         class="btn btn-sm"
+         style="border: 1px solid var(--global-theme-color); color: var(--global-theme-color);">
+        <i class="fas fa-download"></i> 2 Page CV
+      </a>
+    {% endif %}
+  </div>
+
+  <!-- Inline PDF viewer -->
+  {% assign pdf_to_show = page.detailed_cv_pdf | default: page.cv_pdf %}
+  {% if pdf_to_show %}
+    <div class="cv-embed" style="width: 100%; border: 1px solid var(--global-divider-color); border-radius: 4px; overflow: hidden;">
+      <iframe
+        src="{{ pdf_to_show | prepend: 'assets/pdf/' | relative_url }}"
+        width="100%"
+        height="900px"
+        style="display: block; border: none;"
+        title="CV">
+        <p>Your browser does not support embedded PDFs.
+          <a href="{{ pdf_to_show | prepend: 'assets/pdf/' | relative_url }}" target="_blank">Click here to download the CV.</a>
+        </p>
+      </iframe>
+    </div>
+  {% endif %}
+</div>
