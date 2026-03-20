@@ -9,9 +9,12 @@
   color: "#2e8b57"
 
 "Haphazard Inputs":
+
+"Online Learning":
+  color: "#d4622a"
   color: "#e05c4b"
 
-"ISTS":
+"Time Series":
   color: "#c47e17"
 
 "NLP":
@@ -19,6 +22,9 @@
 
 "Book":
   color: "#7b5ea7"
+
+"Cloud Computing":
+  color: "#5e9e6e"
 
 "LLM":
   color: "#3d7ebf"

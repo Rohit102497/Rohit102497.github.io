@@ -1,29 +1,33 @@
 ---
 ---
-<div class="row">
+<div class="row pub-entry" data-tags="{% if entry.filter_tags %}{{ entry.filter_tags }}{% else %}{{ entry.abbr }}{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{site.data.venues[entry.abbr].url}}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
-        {% endif %}
+        {%- assign abbr_list = entry.abbr | split: "|" -%}
+        {%- for abbr_item in abbr_list -%}
+          {%- assign abbr_trimmed = abbr_item | strip -%}
+          {%- if site.data.venues[abbr_trimmed] -%}
+            {% assign venue_style = null %}
+            {% if site.data.venues[abbr_trimmed].color != blank %}
+              {% assign venue_style = site.data.venues[abbr_trimmed].color | prepend: 'style="background-color:' | append: '"' %}
+            {%- endif -%}
+            <abbr
+              class="badge rounded w-100"
+              {% if venue_style %}
+                {{ venue_style }}
+              {% endif -%}
+            >
+              {% if site.data.venues[abbr_trimmed].url %}
+                <a href="{{site.data.venues[abbr_trimmed].url}}">{{ abbr_trimmed }}</a>
+              {% else %}
+                <div>{{- abbr_trimmed -}}</div>
+              {% endif %}
+            </abbr>
+          {% else %}
+            <abbr class="badge rounded w-100">{{ abbr_trimmed }}</abbr>
+          {% endif %}
+        {%- endfor -%}
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}

@@ -378,6 +378,8 @@ filtered_bibtex_keywords:
     code,
     poster,
     preview,
+    filter_tags,
+    google_scholar_id,
     selected,
     slides,
     supp,
