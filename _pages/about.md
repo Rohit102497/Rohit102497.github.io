@@ -9,19 +9,22 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  # more_info: >
-  #   <p>Department of Computer Science, UiT Tromsø</p>
-  #   <p>Hansine Hansens Veg 18</p>
-  #   <p>Tromsø, Norway 9019</p>
+  more_info: >
+    <p>Bio-AI Lab</p>
+    <p>Department of Computer Science</p>
+    <p>UiT The Arctic University of Norway</p>
+    <p>Tromsø, Norway 9019</p>
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am Rohit Agarwal, a 4th-Year Ph.D. student at the Department of Computer Science, UiT Tromsø, Norway. I work on building scalable AI architectures for complex biological systems. I work in the [Bio-AI](https://www.bioailab.org/) and [3DNanoscopy](https://www.3dnanoscopy.com/) Lab under the supervision of [Dilip K. Prasad](https://sites.google.com/site/dilipprasad/), [Alexander Horsch](https://en.uit.no/ansatte/alexander.horsch) and [Krishna Agarwal](https://sites.google.com/site/uthkrishth/krishnaagarwal).
+I am Rohit Agarwal, an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), Department of Computer Science, UiT The Arctic University of Norway, Tromsø. I completed my Ph.D. in Artificial Intelligence in 2025 under the supervision of [Dilip K. Prasad](https://sites.google.com/site/dilipprasad/), [Alexander Horsch](https://en.uit.no/ansatte/alexander.horsch), and [Krishna Agarwal](https://sites.google.com/site/uthkrishth/krishnaagarwal).
 
-I am interested in making dynamic deep learning models where the number of inputs to a model keeps changing with streaming data. I call them [Haphazard Inputs](https://openreview.net/pdf?id=R9CgBkeZ6Z). Along with these, I have experience in computer vision and natural language processing. Recently, I am also exploring large language models (LLMs) with a focus on continual learning and quantization.
+My research focuses on building scalable online deep learning models for streaming data with varying feature spaces — a setting I call [Haphazard Inputs](https://openreview.net/pdf?id=R9CgBkeZ6Z). This involves online learning, continual learning, and dynamic neural architectures that adapt as the number of available inputs changes over time. I also have experience in time series, LLMs, computer vision and natural language processing. My current research focusses on LLMs and Haphazard Inputs.
+
+I have also authored the book [Cloud Computing for Everyone](https://bpbonline.com/products/cloud-computing-for-everyone) (BPB Online, 2025). The book provides an accessible overview of cloud computing — from foundational concepts to advanced practices — and received the [**Golden Wings Award**](https://www.goldenbookawards.com/shining-superstar/).
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

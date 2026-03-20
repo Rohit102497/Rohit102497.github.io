@@ -2,96 +2,180 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Rohit Agarwal
+    - name: Position
+      value: AI Researcher, UiT The Arctic University of Norway
+    - name: Address
+      value: H0806 Smorbukklia 3, 9010 Tromsø, Norway
+    - name: Email
+      value: agarwal.102497@gmail.com
     - name: Languages
-      value: English, German
+      value: Hindi (Native), English, Nepali, Bengali (Intermediate), Norwegian (Beginner)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Doctor of Philosophy in Artificial Intelligence
+      institution: UiT The Arctic University of Tromsø, Norway
+      year: 2021 - 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - "Thesis: Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces"
+        - Developed machine learning architectures and concepts to model varying feature space in online learning.
+        - title: Supervisors
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Prof. Dilip K. Prasad
+            - Prof. Alexander Horsch
+            - Prof. Krishna Agarwal
+    - title: 5-year Integrated M.Tech in Mathematics and Computing
+      institution: Indian Institute of Technology (ISM) Dhanbad, India
+      year: 2015 - 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Gold Medalist | Passed with distinction | GPA 9.49/10
+        - "Thesis: Deep Learning for Streaming Classification (Grade: A+)"
+        - Proposed a deep learning model based on the hedge algorithm and online gradient descent to model dimension-varying inputs in online learning.
+        - title: Supervisors
+          contents:
+            - Prof. Garib Nath Singh
+            - Prof. Dilip K. Prasad
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: AI Researcher
+      institution: UiT The Arctic University of Norway, Bio-AI Lab
+      year: 2025 - Now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Working on Large Language Models with a focus on parameter-efficient fine-tuning and low-rank adaptation (LoRA) techniques.
+        - "Keywords: Python, PyTorch, LLM, PEFT, LoRA"
+    - title: Visiting Researcher
+      institution: National University of Singapore (NUS), NCRiPT-Lab
+      year: May - Aug 2023
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - "Host: Prof. Mohan Kankanhalli"
+        - In-depth analysis of haphazard inputs. Implemented non-open-sourced models and established dataset and model taxonomy.
+        - "Keywords: Python, PyTorch, TDigest, Numpy, Sklearn"
+    - title: Software Engineer
+      institution: Adobe Inc., Bangalore, India
+      year: Aug 2020 - May 2021
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Internal cloud operations team — deploying applications and day-to-day cloud ops.
+        - "Keywords: Python, Kubernetes, AWS, Azure, Puppet, Terraform, Ansible, Chef, CI/CD"
+    - title: Research Intern
+      institution: UiT The Arctic University of Norway
+      year: Feb - June 2020
+      description:
+        - "Guide: Dr. Dilip K. Prasad"
+        - Developed a scalable architecture for streaming classification and a pipeline for simulating mitochondria motion.
+        - "Keywords: Python, Keras, TensorFlow, MLP, Homographic Transformation, Microscopy"
+    - title: Intern
+      institution: Adobe Inc., Bangalore, India
+      year: May - July 2019
+      description:
+        - Cloud storage prediction for enterprise and individual Adobe customers.
+        - "Keywords: Python, Keras, TensorFlow, StatsModels, ARIMA, MLP, LSTM, Encoder-Decoder"
+    - title: Summer Research Fellow
+      institution: NIBMG Kalyani, India
+      year: May - July 2018
+      description:
+        - "Guide: Dr. Samsiddhi Bhattacharjee"
+        - Predicted SNPs associated with diseases using classical machine learning methods.
+        - "Keywords: R, Glm, RandomForest, Rpart, Logistic and Lasso Regression, CART, Fisher's Exact Test"
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Golden Wings Award for the book <em>Cloud Computing for Everyone</em>
+        - Travel grant of $1000 to present doctoral dissertation at IEEE IJCNN Conference
+    - year: 2024
       items:
-        - Max Planck Medal
+        - Runner-up of DLN mini-MBA organized by Digital Life Norway
+    - year: 2023
+      items:
+        - Visiting researcher grant (3 months at NUS Singapore) awarded by UiT
+    - year: 2018
+      items:
+        - Science Academies' Summer Research Fellowship
+    - year: 2017 - 2019
+      items:
+        - Merit Cum Means (MCM) Scholarship, IIT (ISM) Dhanbad
+        - Director Scholarship for excellence in academics (2017 & 2018)
+    - year: 2015 - 2020
+      items:
+        - Gold Medalist, Applied Mathematics Department, IIT (ISM) Dhanbad
+    - year: 2015
+      items:
+        - All India Rank 5017 in IIT JEE Advanced (1,50,000+ candidates)
+        - General Merit Rank 51 in WBJEE (3,00,000+ candidates)
+    - year: 2014
+      items:
+        - International Rank 23 (Level 1) and International Rank 19 (Level 2) in International Olympiad of Mathematics
+
+- title: Academic Activities
+  type: nested_list
+  contents:
+    - title: Teaching
+      items:
+        - "Cloud and Big Data Technology (INF-2220), UiT Tromsø — Fall 2021, 2022, 2023, 2024"
+        - "AI - Methods and Applications (INF-2600), UiT Tromsø — Spring 2023, 2024"
+    - title: Co-Supervision
+      items:
+        - "Aaron Celeste, Master Student, UiT Tromsø (2022–2023)"
+        - "Arijit Das, Master Student, IIT ISM Dhanbad (2025–2026)"
+    - title: Reviewer
+      items:
+        - "2023: ICDEC [C], Nordic Machine Intelligence [J]"
+        - "2024: ICASSP [C], ICPR-SPRCV [C], IEEE TGRS [J], TMLR [J]"
+        - "2025: ICLR [C]"
+    - title: Program Committee
+      items:
+        - International Conference on Neural Information Processing (ICONIP), 2023
+        - International Conference on Pattern Recognition (ICPR) SRPCV Workshop, 2024
+    - title: Organizer
+      items:
+        - "CHOMPS Workshop at AACL, Dec 2025"
+        - "Panel Discussion on Bridging the Gap: Expectations and Realities in Supervision, DLN Conference 2024"
+        - "Social activity: Navigating the Future — Strategic Career Planning for Young Researchers, Sep 2024"
+        - "Large Language Model Workshop, UiT Tromsø, Oct 2023"
+
+- title: Computer Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python, R, C++, C, Java, HTML, LaTeX, JavaScript
+    - title: Concepts
+      items:
+        - Linux, Kubernetes, Docker, AWS, Azure, Infrastructure as Code, CI/CD
+    - title: Libraries
+      items:
+        - PyTorch, Keras, TensorFlow, Sklearn, Pandas, NumPy, Matplotlib
+    - title: Tools
+      items:
+        - VS Code, Git, Terraform, Puppet, Chef, Ansible, Jira, MySQL, Jenkins
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Online Learning
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Haphazard Inputs and Varying Feature Space
+        - Streaming Data Classification
+        - Continual Learning
+    - title: Deep Learning
       items:
-        - Description 1.
-        - Description 2.
+        - Large Language Models (LLMs) and Parameter-Efficient Fine-Tuning
+        - Computer Vision
+        - Natural Language Processing
+    - title: Other
+      items:
+        - Irregularly Sampled Time Series
+        - Scientific Machine Learning
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "<u>Sports:</u> Volleyball, Football, Basketball, Cricket, Badminton, Running, Cycling, Hiking"
+    - "<u>Others:</u> Leadership, Management, Finance, Programming, Rubik's Cube, Cooking"
+    - "<u>Languages:</u> Hindi (Native), English, Nepali, Bengali (Intermediate), Norwegian (Beginner)"
