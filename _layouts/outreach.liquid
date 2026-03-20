@@ -1,0 +1,430 @@
+---
+layout: default
+---
+
+<style>
+/* ── Nav pills ─────────────────────────────────────────────────────────── */
+.or-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+.or-nav-pill {
+  flex: 1;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.75rem 0.5rem;
+  border: none;
+  border-radius: 8px;
+  color: var(--global-theme-color);
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.18s, color 0.18s, transform 0.18s;
+}
+.or-nav-pill i { font-size: 1.6rem; }
+.or-nav-pill .or-count {
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
+.or-nav-pill:hover {
+  background: rgba(var(--global-theme-color-rgb, 0,0,0), 0.08);
+  transform: translateY(-2px);
+}
+
+/* ── Section header ────────────────────────────────────────────────────── */
+.or-section { margin-bottom: 4rem; }
+.or-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--global-theme-color);
+}
+.or-section-header i { color: var(--global-theme-color); font-size: 1.2rem; }
+.or-section-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--global-theme-color);
+}
+
+/* ── Blog cards ─────────────────────────────────────────────────────────── */
+.or-blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.or-blog-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: var(--global-text-color) !important;
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+}
+.or-blog-card:hover {
+  border-color: var(--global-theme-color);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  transform: translateY(-3px);
+}
+.or-blog-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.or-blog-date { font-size: 0.78rem; color: var(--global-text-color-light); }
+.or-blog-source {
+  font-size: 0.72rem;
+  background: var(--global-theme-color);
+  color: #fff;
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+}
+.or-blog-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
+}
+.or-blog-card p {
+  font-size: 0.83rem;
+  color: var(--global-text-color-light);
+  margin: 0;
+  flex-grow: 1;
+}
+.or-blog-arrow {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--global-theme-color);
+  font-weight: 600;
+}
+
+/* ── Talks timeline ─────────────────────────────────────────────────────── */
+.or-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.or-timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--global-divider-color);
+}
+.or-timeline-item {
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.or-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--global-theme-color);
+  border: 3px solid var(--global-bg-color);
+  box-shadow: 0 0 0 2px var(--global-theme-color);
+}
+.or-timeline-date {
+  min-width: 90px;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  padding-top: 2px;
+  text-align: right;
+}
+.or-timeline-body { flex: 1; }
+.or-timeline-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  font-style: italic;
+}
+.or-timeline-event {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.4rem;
+}
+.or-timeline-links { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.4rem; }
+.or-timeline-link {
+  font-size: 0.78rem;
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 20px;
+  color: var(--global-theme-color);
+  text-decoration: none !important;
+  transition: background 0.15s, color 0.15s;
+}
+.or-timeline-link:hover {
+  background: var(--global-theme-color);
+  color: #fff;
+}
+
+/* ── Video / Podcast cards ─────────────────────────────────────────────── */
+.or-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.or-video-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: var(--global-text-color) !important;
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+  display: flex;
+  flex-direction: column;
+}
+.or-video-card:hover {
+  border-color: var(--global-theme-color);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  transform: translateY(-3px);
+}
+.or-video-thumb {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  background: #000;
+  overflow: hidden;
+}
+.or-video-thumb img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 0.18s;
+}
+.or-video-card:hover .or-video-thumb img { opacity: 1; }
+.or-play-btn {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px; height: 52px;
+  background: rgba(255,0,0,0.85);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  pointer-events: none;
+  transition: background 0.18s;
+}
+.or-video-card:hover .or-play-btn { background: rgba(255,0,0,1); }
+.or-video-info { padding: 1rem 1.1rem; flex: 1; display: flex; flex-direction: column; }
+.or-video-date { font-size: 0.78rem; color: var(--global-text-color-light); margin-bottom: 0.35rem; }
+.or-video-title { font-size: 0.9rem; font-weight: 600; margin: 0 0 0.35rem; line-height: 1.4; }
+.or-video-desc { font-size: 0.8rem; color: var(--global-text-color-light); margin: 0; }
+
+/* ── Podcast card (wider single card) ─────────────────────────────────── */
+.or-podcast-card {
+  display: flex;
+  gap: 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: var(--global-text-color) !important;
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+  margin-bottom: 1.25rem;
+}
+.or-podcast-card:hover {
+  border-color: var(--global-theme-color);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  transform: translateY(-3px);
+}
+.or-podcast-thumb {
+  position: relative;
+  flex-shrink: 0;
+  width: 180px;
+}
+.or-podcast-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.or-podcast-info { padding: 1.1rem 1.25rem 1.1rem 0; display: flex; flex-direction: column; justify-content: center; }
+.or-podcast-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--global-theme-color);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+.or-podcast-title { font-size: 1rem; font-weight: 700; margin: 0 0 0.2rem; }
+.or-podcast-subtitle { font-size: 0.83rem; color: var(--global-text-color-light); margin: 0 0 0.5rem; }
+.or-podcast-desc { font-size: 0.82rem; color: var(--global-text-color-light); margin: 0 0 0.75rem; }
+.or-podcast-meta { font-size: 0.78rem; color: var(--global-text-color-light); }
+
+@media (max-width: 576px) {
+  .or-podcast-card { flex-direction: column; }
+  .or-podcast-thumb { width: 100%; height: 180px; }
+  .or-podcast-info { padding: 1rem; }
+  .or-timeline-date { display: none; }
+}
+</style>
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <!-- ── Category navigation ── -->
+  <div class="or-nav">
+    <a href="#blogs" class="or-nav-pill">
+      <i class="fas fa-pen-nib"></i>
+      <span>Blog</span>
+      <span class="or-count">{{ site.data.outreach.blogs | size }} posts</span>
+    </a>
+    <a href="#talks" class="or-nav-pill">
+      <i class="fas fa-microphone-alt"></i>
+      <span>Talks</span>
+      <span class="or-count">{{ site.data.outreach.talks | size }} talks</span>
+    </a>
+    <a href="#podcasts" class="or-nav-pill">
+      <i class="fas fa-headphones"></i>
+      <span>Podcast</span>
+      <span class="or-count">{{ site.data.outreach.podcasts | size }} episode</span>
+    </a>
+    <a href="#videos" class="or-nav-pill">
+      <i class="fab fa-youtube"></i>
+      <span>Videos</span>
+      <span class="or-count">{{ site.data.outreach.videos | size }} videos</span>
+    </a>
+  </div>
+
+  <!-- ── Blog ── -->
+  <section id="blogs" class="or-section">
+    <div class="or-section-header">
+      <i class="fas fa-pen-nib"></i>
+      <h2>Blog</h2>
+    </div>
+    <div class="or-blog-grid">
+      {% for post in site.data.outreach.blogs %}
+      <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="or-blog-card">
+        <div class="or-blog-meta">
+          <span class="or-blog-date">{{ post.date }}</span>
+          <span class="or-blog-source">{{ post.source }}</span>
+        </div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.description }}</p>
+        <div class="or-blog-arrow">Read &rarr;</div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ── Talks ── -->
+  <section id="talks" class="or-section">
+    <div class="or-section-header">
+      <i class="fas fa-microphone-alt"></i>
+      <h2>Talks</h2>
+    </div>
+    <ul class="or-timeline">
+      {% assign talks_reversed = site.data.outreach.talks | reverse %}
+      {% for talk in talks_reversed %}
+      <li class="or-timeline-item">
+        <div class="or-timeline-date">{{ talk.date }}</div>
+        <div class="or-timeline-body">
+          <div class="or-timeline-title">&ldquo;{{ talk.title }}&rdquo;</div>
+          <div class="or-timeline-event">
+            <i class="fas fa-map-marker-alt fa-xs"></i> {{ talk.location }} &nbsp;&middot;&nbsp;
+            {% if talk.event_url %}
+              <a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer" style="color:inherit;">{{ talk.event }}</a>
+            {% else %}
+              {{ talk.event }}
+            {% endif %}
+            {% if talk.duration %}&nbsp;&middot;&nbsp; {{ talk.duration }}{% endif %}
+          </div>
+          <div class="or-timeline-links">
+            {% if talk.slides_url %}
+              <a href="{{ talk.slides_url }}" target="_blank" rel="noopener noreferrer" class="or-timeline-link">
+                <i class="fas fa-file-powerpoint"></i> Slides
+              </a>
+            {% endif %}
+            {% if talk.video_url %}
+              <a href="{{ talk.video_url }}" target="_blank" rel="noopener noreferrer" class="or-timeline-link">
+                <i class="fab fa-youtube"></i> Video
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- ── Podcasts ── -->
+  <section id="podcasts" class="or-section">
+    <div class="or-section-header">
+      <i class="fas fa-headphones"></i>
+      <h2>Podcast</h2>
+    </div>
+    {% for ep in site.data.outreach.podcasts %}
+    <a href="https://www.youtube.com/watch?v={{ ep.video_id }}" target="_blank" rel="noopener noreferrer" class="or-podcast-card">
+      <div class="or-podcast-thumb">
+        <img src="https://img.youtube.com/vi/{{ ep.video_id }}/mqdefault.jpg" alt="{{ ep.title }}" loading="lazy">
+      </div>
+      <div class="or-podcast-info">
+        <div class="or-podcast-label"><i class="fas fa-headphones"></i> Podcast</div>
+        <div class="or-podcast-title">{{ ep.title }}</div>
+        <div class="or-podcast-subtitle">{{ ep.subtitle }}</div>
+        <div class="or-podcast-desc">{{ ep.description }}</div>
+        <div class="or-podcast-meta">
+          <i class="fas fa-calendar-alt fa-xs"></i> {{ ep.date }}
+          &nbsp;&middot;&nbsp; <i class="fas fa-map-marker-alt fa-xs"></i> {{ ep.location }}
+          &nbsp;&middot;&nbsp; <i class="fab fa-youtube fa-xs"></i> YouTube
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </section>
+
+  <!-- ── Videos ── -->
+  <section id="videos" class="or-section">
+    <div class="or-section-header">
+      <i class="fab fa-youtube"></i>
+      <h2>Videos</h2>
+    </div>
+    <div class="or-video-grid">
+      {% for video in site.data.outreach.videos %}
+      <a href="https://www.youtube.com/watch?v={{ video.video_id }}" target="_blank" rel="noopener noreferrer" class="or-video-card">
+        <div class="or-video-thumb">
+          <img src="https://img.youtube.com/vi/{{ video.video_id }}/mqdefault.jpg" alt="{{ video.title }}" loading="lazy">
+          <div class="or-play-btn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="or-video-info">
+          <div class="or-video-date"><i class="fas fa-calendar-alt fa-xs"></i> {{ video.date }}</div>
+          <div class="or-video-title">{{ video.title }}</div>
+          <div class="or-video-desc">{{ video.description }}</div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+</div>
