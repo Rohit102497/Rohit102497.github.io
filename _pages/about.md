@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Scalable AI Models, Online Learning, Varying Feature Space, Time Series, LLMs
+subtitle:
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -16,15 +16,25 @@ profile:
     <p><i class="fa-solid fa-location-dot fa-sm"></i>&ensp;Tromsø, Norway</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am Rohit Agarwal, an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), Department of Computer Science, UiT The Arctic University of Norway, Tromsø. I completed my Ph.D. in Artificial Intelligence in 2025 under the supervision of [Dilip K. Prasad](https://sites.google.com/site/dilipprasad/), [Alexander Horsch](https://en.uit.no/ansatte/alexander.horsch), and [Krishna Agarwal](https://sites.google.com/site/uthkrishth/krishnaagarwal).
+I am an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), Department of Computer Science, UiT The Arctic University of Norway, Tromsø. I completed my Ph.D. in Artificial Intelligence in 2025, on the topic [*Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces*](https://nva.sikt.no/registration/019a2ae0f768-2e0581b0-c814-45e4-8b79-fba6516a5299), supervised by [Dilip K. Prasad](https://sites.google.com/site/dilipprasad/), [Alexander Horsch](https://en.uit.no/ansatte/alexander.horsch), and [Krishna Agarwal](https://sites.google.com/site/uthkrishth/krishnaagarwal).
 
-My research focuses on building scalable online deep learning models for streaming data with varying feature spaces — a setting I call [Haphazard Inputs](https://openreview.net/pdf?id=R9CgBkeZ6Z). This involves online learning, continual learning, and dynamic neural architectures that adapt as the number of available inputs changes over time. I also have experience in time series, LLMs, computer vision and natural language processing. My current research focusses on LLMs and Haphazard Inputs.
+My research focuses on building scalable online deep learning models for streaming data with varying feature spaces, a setting I call [Haphazard Inputs](https://openreview.net/pdf?id=R9CgBkeZ6Z). This involves online learning, continual learning, and dynamic neural architectures that adapt as the number of available inputs changes over time. Currently, I am investigating hallucinations in large language models and building scalable models for haphazard inputs. My research interests include:
 
-I have also authored the book [Cloud Computing for Everyone](https://bpbonline.com/products/cloud-computing-for-everyone) (BPB Online, 2025). The book provides an accessible overview of cloud computing — from foundational concepts to advanced practices — and received the [**Golden Wings Award**](https://www.goldenbookawards.com/shining-superstar/).
+- Scalable Online Deep Learning Models
+- Online Learning
+- Haphazard Inputs / Varying Feature Space
+- Large Language Models (LLMs)
+- Time Series
+- Computer Vision
+- NLP
+
+Alongside my research, I authored [Cloud Computing for Everyone](https://bpbonline.com/products/cloud-computing-for-everyone) (BPB Online, 2025) — an accessible guide from foundational cloud concepts to advanced practices — which received the [**Golden Wings Award**](https://www.goldenbookawards.com/shining-superstar/) 2025.
+
+Outside the lab, I can usually be found on a volleyball court, out on a trail, or in the water. The Norwegian Arctic landscape makes for a pretty compelling reason to stay active.
 
 <style>
 /* ══════════════════════════════════════════
@@ -109,8 +119,3 @@ I have also authored the book [Cloud Computing for Everyone](https://bpbonline.c
 
 </style>
 
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
