@@ -10,9 +10,7 @@ email: agarwal.102497@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   AI Researcher at UiT The Arctic University of Norway. Working on online learning, haphazard inputs, and large language models.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+  Last Updated: 21st March 2026.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌌 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
