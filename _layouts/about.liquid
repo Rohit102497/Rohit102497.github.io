@@ -212,23 +212,55 @@ layout: default
       background: color-mix(in srgb, var(--jrn-color) 12%, transparent);
       color: var(--jrn-color);
     }
+    .jrn-side-l, .jrn-side-r {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem;
+      font-size: 0.78rem;
+      color: var(--global-text-color-light);
+      line-height: 1.5;
+    }
+    .jrn-side-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.35rem;
+    }
+    .jrn-side-sub { font-size: 0.78rem; color: var(--global-text-color-light); }
     @media (max-width: 600px) {
       .jrn-wrap::before { left: 24px; transform: none; }
-      .jrn-entry { grid-template-columns: 50px 1fr; grid-template-rows: auto; }
-      .jrn-dot-wrap { grid-column: 1; grid-row: 1; }
+      .jrn-entry {
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: auto auto;
+      }
+      .jrn-dot-wrap { grid-column: 1; grid-row: 1; align-self: start; padding-top: 0.2rem; }
       .jrn-card-l, .jrn-card-r {
         grid-column: 2; grid-row: 1;
         text-align: left !important;
         padding-left: 1.4rem !important;
       }
-      .jrn-card-l::after { display: none; }
+      .jrn-card-l::after {
+        display: block;
+        right: auto; left: -6px;
+        width: 12px;
+        border-right: none;
+        border-left: 3px solid var(--jrn-color);
+        border-radius: 50%;
+      }
       .jrn-card-r::before {
         left: -6px; width: 12px;
         border-left: 3px solid var(--jrn-color);
         border-radius: 50%;
       }
-      .jrn-empty-l, .jrn-empty-r, .jrn-side-l, .jrn-side-r { display: none; }
-      .jrn-card-l .jrn-tags, .jrn-card-r .jrn-tags { justify-content: flex-start; }
+      .jrn-empty-l, .jrn-empty-r { display: none; }
+      .jrn-side-l, .jrn-side-r {
+        grid-column: 1 / -1; grid-row: 2;
+        padding: 0.5rem 0 0 0;
+      }
+      .jrn-card-l .jrn-tags, .jrn-card-r .jrn-tags { justify-content: flex-start; align-items: flex-start !important; }
     }
     </style>
 

@@ -43,13 +43,12 @@ layout: default
     <div class="cv-download-btns">
       {% if page.detailed_cv_pdf %}
         {% assign detailed_url = page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url %}
-        <button onclick="switchCV('{{ detailed_url }}', this)" class="cv-dl-btn" style="cursor:pointer; background:var(--global-theme-color); color:white !important;">
+        <button onclick="switchCV('detailed', this)" class="cv-dl-btn" style="cursor:pointer; background:var(--global-theme-color); color:white !important;">
           <i class="fas fa-file-alt"></i> Detailed CV
         </button>
       {% endif %}
       {% if page.cv_pdf %}
-        {% assign short_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
-        <button onclick="switchCV('{{ short_url }}', this)" class="cv-dl-btn" style="cursor:pointer;">
+        <button onclick="switchCV('short', this)" class="cv-dl-btn" style="cursor:pointer;">
           <i class="fas fa-file-alt"></i> 2-Page CV
         </button>
       {% endif %}
@@ -63,12 +62,35 @@ layout: default
   {% if page.detailed_cv_pdf or page.cv_pdf %}
     {% assign detailed_url = page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url %}
 
-    <div style="width:100%; border:1px solid var(--global-divider-color); border-radius:4px; overflow:hidden;">
+    <style>
+      .cv-embed-wrap {
+        width: 100%;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 4px;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        height: 900px;
+      }
+      .cv-embed-wrap iframe {
+        display: block;
+        border: none;
+        width: 100%;
+        height: 100%;
+        min-height: 900px;
+      }
+      @media (max-width: 768px) {
+        .cv-embed-wrap { height: 75vh; }
+        .cv-embed-wrap iframe { min-height: 75vh; }
+      }
+    </style>
+    {% assign detailed_abs = page.detailed_cv_pdf | prepend: '/assets/pdf/' | prepend: site.url %}
+    {% assign short_abs = page.cv_pdf | prepend: '/assets/pdf/' | prepend: site.url %}
+
+    <div class="cv-embed-wrap">
       <iframe id="cv-iframe"
-        src="{{ detailed_url }}"
-        width="100%"
-        height="900px"
-        style="display:block; border:none;"
+        src="https://docs.google.com/viewer?url={{ detailed_abs | url_encode }}&embedded=true"
+        data-detailed="https://docs.google.com/viewer?url={{ detailed_abs | url_encode }}&embedded=true"
+        data-short="https://docs.google.com/viewer?url={{ short_abs | url_encode }}&embedded=true"
         title="CV">
         <p>Your browser does not support embedded PDFs.
           <a href="{{ detailed_url }}" target="_blank">Click here to open the CV.</a>
@@ -77,8 +99,9 @@ layout: default
     </div>
 
     <script>
-      function switchCV(url, btn) {
-        document.getElementById('cv-iframe').src = url;
+      function switchCV(type, btn) {
+        var iframe = document.getElementById('cv-iframe');
+        iframe.src = iframe.dataset[type];
         document.querySelectorAll('.cv-dl-btn[onclick]').forEach(function(b) {
           b.style.background = '';
           b.style.color = '';
