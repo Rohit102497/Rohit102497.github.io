@@ -21,7 +21,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), UiT The Arctic University of Norway. My Ph.D. (2025) explored [*Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces*], a problem I frame as [Haphazard Inputs](https://nva.sikt.no/registration/019a2ae0f768-2e0581b0-c814-45e4-8b79-fba6516a5299), where models must adapt as the number and type of available features change unpredictably over time.
+I am an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), UiT The Arctic University of Norway. My Ph.D. (2025) explored *Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces*, a problem I frame as [Haphazard Inputs](https://nva.sikt.no/registration/019a2ae0f768-2e0581b0-c814-45e4-8b79-fba6516a5299), where models must adapt as the number and type of available features change unpredictably over time.
 
 Currently, I investigate hallucinations in large language models, studying when and why they fabricate facts. My broader research interests include:
 
