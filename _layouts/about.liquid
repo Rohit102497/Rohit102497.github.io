@@ -55,6 +55,282 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Journey -->
+    {% if page.journey %}
+    <h2>Journey</h2>
+
+    <style>
+    .jrn-wrap {
+      position: relative;
+      padding: 0.5rem 0 0.5rem;
+    }
+    .jrn-wrap::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, var(--global-divider-color) 8%, var(--global-divider-color) 92%, transparent);
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+    .jrn-entry {
+      display: grid;
+      grid-template-columns: 1fr 56px 1fr;
+      align-items: center;
+      margin-bottom: 2.75rem;
+    }
+    .jrn-dot-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+    .jrn-dot {
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+      border: 3px solid var(--global-bg-color);
+      flex-shrink: 0;
+    }
+    .jrn-card {
+      background: transparent;
+      border: none;
+      padding: 0 1.4rem 0.85rem;
+      position: relative;
+      overflow: visible;
+    }
+    .jrn-card-l {
+      grid-column: 1;
+      text-align: right;
+    }
+    .jrn-card-l::after {
+      content: '';
+      position: absolute;
+      right: -14px;
+      top: 0; bottom: 0;
+      width: 22px;
+      border-right: 3px solid var(--jrn-color);
+      border-radius: 50%;
+    }
+    .jrn-card-r {
+      grid-column: 3;
+      text-align: left;
+    }
+    .jrn-card-r::before {
+      content: '';
+      position: absolute;
+      left: -14px;
+      top: 0; bottom: 0;
+      width: 22px;
+      border-left: 3px solid var(--jrn-color);
+      border-radius: 50%;
+    }
+    .jrn-empty-l { grid-column: 1; }
+    .jrn-empty-r { grid-column: 3; }
+    .jrn-side-l {
+      grid-column: 1;
+      text-align: right;
+      padding: 0 1.4rem 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .jrn-side-r {
+      grid-column: 3;
+      text-align: left;
+      padding: 0 0 0 1.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    .jrn-side-label {
+      font-size: 0.63rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.18rem;
+    }
+    .jrn-side-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--global-text-color);
+      margin-bottom: 0.1rem;
+      line-height: 1.3;
+    }
+    .jrn-side-sub {
+      font-size: 0.73rem;
+      color: var(--global-text-color-light);
+      line-height: 1.4;
+    }
+    .jrn-period {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--jrn-color, var(--global-theme-color));
+      margin-bottom: 0.2rem;
+    }
+    .jrn-role {
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: var(--global-text-color);
+      line-height: 1.3;
+      margin-bottom: 0.12rem;
+    }
+    .jrn-org {
+      font-size: 0.77rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.65rem;
+      line-height: 1.4;
+    }
+    .jrn-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .jrn-card-l .jrn-tags { justify-content: flex-end; }
+    .jrn-card-r .jrn-tags { justify-content: flex-start; }
+    .jrn-tag {
+      font-size: 0.63rem;
+      font-weight: 600;
+      padding: 0.18rem 0.5rem;
+      border-radius: 20px;
+      background: var(--global-divider-color);
+      color: var(--global-text-color-light);
+      white-space: nowrap;
+    }
+    .jrn-tag-hi {
+      background: color-mix(in srgb, var(--jrn-color) 12%, transparent);
+      color: var(--jrn-color);
+    }
+    @media (max-width: 600px) {
+      .jrn-wrap::before { left: 24px; transform: none; }
+      .jrn-entry { grid-template-columns: 50px 1fr; grid-template-rows: auto; }
+      .jrn-dot-wrap { grid-column: 1; grid-row: 1; }
+      .jrn-card-l, .jrn-card-r {
+        grid-column: 2; grid-row: 1;
+        text-align: left !important;
+        padding-left: 1.4rem !important;
+      }
+      .jrn-card-l::after { display: none; }
+      .jrn-card-r::before {
+        left: -6px; width: 12px;
+        border-left: 3px solid var(--jrn-color);
+        border-radius: 50%;
+      }
+      .jrn-empty-l, .jrn-empty-r, .jrn-side-l, .jrn-side-r { display: none; }
+      .jrn-card-l .jrn-tags, .jrn-card-r .jrn-tags { justify-content: flex-start; }
+    }
+    </style>
+
+    <div class="jrn-wrap">
+
+      <!-- AI Researcher — LEFT -->
+      <div class="jrn-entry">
+        <div class="jrn-card jrn-card-l" style="--jrn-color:#b509ac;">
+          <div class="jrn-period">Jul 2025 — Present</div>
+          <div class="jrn-role">AI Researcher</div>
+          <div class="jrn-org">Bio-AI Lab · UiT The Arctic University of Norway</div>
+          <div class="jrn-tags">
+            <span class="jrn-tag jrn-tag-hi">🏆 Golden Wings Award</span>
+            <span class="jrn-tag">CHOMPS Workshop @ AACL</span>
+            <span class="jrn-tag">Bioscopy Conference 2026</span>
+            <span class="jrn-tag">Hindustan Times Feature</span>
+          </div>
+        </div>
+        <div class="jrn-dot-wrap">
+          <div class="jrn-dot" style="background: linear-gradient(135deg,#b509ac,#d946ef);">
+            <i class="fas fa-network-wired"></i>
+          </div>
+        </div>
+        <div class="jrn-empty-r"></div>
+      </div>
+
+      <!-- PhD — RIGHT -->
+      <div class="jrn-entry">
+        <div class="jrn-side-l">
+          <div class="jrn-side-sub">Visiting Researcher · NUS, Singapore · Aug–Nov 2023</div>
+        </div>
+        <div class="jrn-dot-wrap">
+          <div class="jrn-dot" style="background: linear-gradient(135deg,#0d9488,#34d399);">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+        </div>
+        <div class="jrn-card jrn-card-r" style="--jrn-color:#0d9488;">
+          <div class="jrn-period">Jun 2021 — Nov 2025</div>
+          <div class="jrn-role">PhD in Artificial Intelligence</div>
+          <div class="jrn-org">UiT The Arctic University of Norway · Tromsø, Norway</div>
+          <div class="jrn-tags">
+            <span class="jrn-tag jrn-tag-hi">📖 Cloud Computing for Everyone</span>
+            <span class="jrn-tag">$1k Travel Grant – IJCNN</span>
+            <span class="jrn-tag">DLN Mini-MBA Runner-up</span>
+            <span class="jrn-tag">Arctic LLM Workshop</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adobe SE — LEFT -->
+      <div class="jrn-entry">
+        <div class="jrn-card jrn-card-l" style="--jrn-color:#e55300;">
+          <div class="jrn-period">Aug 2020 — May 2021</div>
+          <div class="jrn-role">Software Engineer</div>
+          <div class="jrn-org">Adobe · Bangalore, India</div>
+          <div class="jrn-tags" style="flex-direction:column; align-items:flex-end;">
+            <div style="display:flex; gap:0.3rem;">
+              <span class="jrn-tag jrn-tag-hi">☁️ Cloud Operations</span>
+              <span class="jrn-tag">Kubernetes &amp; AWS</span>
+            </div>
+            <div style="display:flex; gap:0.3rem;">
+              <span class="jrn-tag">Python · Terraform · Ansible</span>
+              <span class="jrn-tag">CI/CD Pipelines</span>
+            </div>
+          </div>
+        </div>
+        <div class="jrn-dot-wrap">
+          <div class="jrn-dot" style="background: linear-gradient(135deg,#e55300,#ff7043);">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+        <div class="jrn-empty-r"></div>
+      </div>
+
+      <!-- M.Tech — RIGHT -->
+      <div class="jrn-entry" style="margin-bottom:0;">
+        <div class="jrn-side-l">
+          <div class="jrn-side-sub">Research Intern · UiT, Norway · Feb–June 2020</div>
+          <div class="jrn-side-sub" style="margin-top:0.35rem;">ML Intern · Adobe Bangalore, India · May–July 2019</div>
+          <div class="jrn-side-sub" style="margin-top:0.35rem;">Data Science Intern · NIBMG Kalyani, India · May–July 2018</div>
+        </div>
+        <div class="jrn-dot-wrap">
+          <div class="jrn-dot" style="background: linear-gradient(135deg,#1e40af,#60a5fa);">
+            <i class="fas fa-university"></i>
+          </div>
+        </div>
+        <div class="jrn-card jrn-card-r" style="--jrn-color:#1e40af;">
+          <div class="jrn-period">Jul 2015 — Jul 2020</div>
+          <div class="jrn-role">Integrated M.Tech. in Mathematics &amp; Computing</div>
+          <div class="jrn-org">IIT (ISM) Dhanbad · Jharkhand, India</div>
+          <div class="jrn-tags">
+            <span class="jrn-tag jrn-tag-hi">🥇 Gold Medalist</span>
+            <span class="jrn-tag">MCM &amp; Director Scholarship</span>
+            <span class="jrn-tag">Science Academies Fellowship</span>
+            <span class="jrn-tag">AIR 5017 – IIT JEE Advanced</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    {% endif %}
+
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>

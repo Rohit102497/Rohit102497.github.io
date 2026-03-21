@@ -16,23 +16,21 @@ profile:
     <p><i class="fa-solid fa-location-dot fa-sm"></i>&ensp;Tromsø, Norway</p>
 
 news: true # includes a list of news items
+journey: true # includes the career journey timeline
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), Department of Computer Science, UiT The Arctic University of Norway, Tromsø. I completed my Ph.D. in Artificial Intelligence in 2025, on the topic [*Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces*](https://nva.sikt.no/registration/019a2ae0f768-2e0581b0-c814-45e4-8b79-fba6516a5299), supervised by [Dilip K. Prasad](https://sites.google.com/site/dilipprasad/), [Alexander Horsch](https://en.uit.no/ansatte/alexander.horsch), and [Krishna Agarwal](https://sites.google.com/site/uthkrishth/krishnaagarwal).
+I am an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), UiT The Arctic University of Norway. My Ph.D. (2025) explored [*Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces*], a problem I frame as [Haphazard Inputs](https://nva.sikt.no/registration/019a2ae0f768-2e0581b0-c814-45e4-8b79-fba6516a5299), where models must adapt as the number and type of available features change unpredictably over time.
 
-My research focuses on building scalable online deep learning models for streaming data with varying feature spaces, a setting I call [Haphazard Inputs](https://openreview.net/pdf?id=R9CgBkeZ6Z). This involves online learning, continual learning, and dynamic neural architectures that adapt as the number of available inputs changes over time. Currently, I am investigating hallucinations in large language models and building scalable models for haphazard inputs. My research interests include:
+Currently, I investigate hallucinations in large language models, studying when and why they fabricate facts. My broader research interests include:
 
-- Scalable Online Deep Learning Models
-- Online Learning
-- Haphazard Inputs / Varying Feature Space
-- Large Language Models (LLMs)
-- Time Series
-- Computer Vision
-- NLP
+- Haphazard Inputs / Varying Feature Spaces
+- Scalable Online Deep Learning
+- Large Language Models
+- Time Series · Computer Vision · NLP
 
-Alongside my research, I authored [Cloud Computing for Everyone](https://bpbonline.com/products/cloud-computing-for-everyone) (BPB Online, 2025) — an accessible guide from foundational cloud concepts to advanced practices — which received the [**Golden Wings Award**](https://www.goldenbookawards.com/shining-superstar/) 2025.
+Alongside my research, I authored [Cloud Computing for Everyone](https://bpbonline.com/products/cloud-computing-for-everyone) (BPB Online, 2025), an accessible guide from foundational cloud concepts to advanced practices, which received the [**Golden Wings Award**](https://www.goldenbookawards.com/shining-superstar/) 2025.
 
 Outside the lab, I can usually be found on a volleyball court, out on a trail, or in the water. The Norwegian Arctic landscape makes for a pretty compelling reason to stay active.
 
