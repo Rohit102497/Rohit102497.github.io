@@ -345,8 +345,7 @@ layout: default
       <h2>Talks</h2>
     </div>
     <ul class="or-timeline">
-      {% assign talks_reversed = site.data.outreach.talks | reverse %}
-      {% for talk in talks_reversed %}
+      {% for talk in site.data.outreach.talks %}
       <li class="or-timeline-item">
         <div class="or-timeline-date">{{ talk.date }}</div>
         <div class="or-timeline-body">

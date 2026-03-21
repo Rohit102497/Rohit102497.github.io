@@ -275,51 +275,6 @@ nav_order: 4
     </li>
   </ul>
 
-  <p class="sv-sub">Workshop &amp; Event Organization</p>
-  <ul class="sv-timeline">
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2026</span>
-      <div class="sv-timeline-body">
-        Organizer &mdash; <a href="https://www.3dnanoscopy.com/bioscopy-conference/" target="_blank">Bioscopy Conference 2026</a> at UiT The Arctic University of Norway, Tromsø &mdash; Jun 15&ndash;17, 2026
-      </div>
-    </li>
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2026</span>
-      <div class="sv-timeline-body">
-        Organizer &mdash; <a href="https://www.bioailab.org/ai4fertility" target="_blank">1st Workshop on AI in Fertility Science</a> &mdash; Apr 18, 2026
-      </div>
-    </li>
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2025</span>
-      <div class="sv-timeline-body">
-        Organizer &mdash; <a href="https://chomps2025.github.io/" target="_blank">CHOMPS Workshop</a> at AACL &mdash; Dec 23, 2025
-      </div>
-    </li>
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2025</span>
-      <div class="sv-timeline-body">
-        Volunteer &mdash; <a href="https://drive.google.com/file/d/1qT49D-iKS5w3H2Cc-JT9MPEgszaPlNpn/view?usp=sharing" target="_blank">IEEE CCGrid2025</a> Conference
-      </div>
-    </li>
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2024</span>
-      <div class="sv-timeline-body">
-        Organizer &mdash; Panel Discussion <em>&ldquo;Bridging the Gap: Expectations and Realities in Supervision&rdquo;</em> at <a href="https://drive.google.com/file/d/1reNTLM8_pMOwruo4XCQ0Jt-oDDrF8Egn/view?usp=sharing" target="_blank">DLN Conference 2024</a> &mdash; Oct 15, 2024
-      </div>
-    </li>
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2024</span>
-      <div class="sv-timeline-body">
-        Organizer &mdash; <em>&ldquo;Navigating the Future: Strategic Career Planning for Young Researchers&rdquo;</em>, Tromsø &mdash; Sep 13, 2024
-      </div>
-    </li>
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2023</span>
-      <div class="sv-timeline-body">
-        Organizer &amp; Moderator &mdash; <a href="https://www.bioailab.org/arcticllmworkshop2023" target="_blank">Large Language Model Workshop</a> at UiT, Tromsø &mdash; Oct 27&ndash;28, 2023
-      </div>
-    </li>
-  </ul>
 </section>
 
 

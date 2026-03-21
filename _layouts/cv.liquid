@@ -42,14 +42,16 @@ layout: default
     <h1 class="post-title" style="margin: 0;">{{ page.title }}</h1>
     <div class="cv-download-btns">
       {% if page.detailed_cv_pdf %}
-        <a href="{{ page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url }}" download class="cv-dl-btn">
-          <i class="fas fa-download"></i> Detailed CV
-        </a>
+        {% assign detailed_url = page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+        <button onclick="switchCV('{{ detailed_url }}', this)" class="cv-dl-btn" style="cursor:pointer; background:var(--global-theme-color); color:white !important;">
+          <i class="fas fa-file-alt"></i> Detailed CV
+        </button>
       {% endif %}
       {% if page.cv_pdf %}
-        <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}" download class="cv-dl-btn">
-          <i class="fas fa-download"></i> 2-Page CV
-        </a>
+        {% assign short_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+        <button onclick="switchCV('{{ short_url }}', this)" class="cv-dl-btn" style="cursor:pointer;">
+          <i class="fas fa-file-alt"></i> 2-Page CV
+        </button>
       {% endif %}
     </div>
   </header>
@@ -57,20 +59,33 @@ layout: default
     <p class="post-description">{{ page.description }}</p>
   {% endif %}
 
-  <!-- Inline PDF viewer -->
-  {% assign pdf_to_show = page.detailed_cv_pdf | default: page.cv_pdf %}
-  {% if pdf_to_show %}
-    <div class="cv-embed" style="width: 100%; border: 1px solid var(--global-divider-color); border-radius: 4px; overflow: hidden;">
-      <iframe
-        src="{{ pdf_to_show | prepend: 'assets/pdf/' | relative_url }}"
+  <!-- PDF toggle + viewer -->
+  {% if page.detailed_cv_pdf or page.cv_pdf %}
+    {% assign detailed_url = page.detailed_cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+
+    <div style="width:100%; border:1px solid var(--global-divider-color); border-radius:4px; overflow:hidden;">
+      <iframe id="cv-iframe"
+        src="{{ detailed_url }}"
         width="100%"
         height="900px"
-        style="display: block; border: none;"
+        style="display:block; border:none;"
         title="CV">
         <p>Your browser does not support embedded PDFs.
-          <a href="{{ pdf_to_show | prepend: 'assets/pdf/' | relative_url }}" target="_blank">Click here to download the CV.</a>
+          <a href="{{ detailed_url }}" target="_blank">Click here to open the CV.</a>
         </p>
       </iframe>
     </div>
+
+    <script>
+      function switchCV(url, btn) {
+        document.getElementById('cv-iframe').src = url;
+        document.querySelectorAll('.cv-dl-btn[onclick]').forEach(function(b) {
+          b.style.background = '';
+          b.style.color = '';
+        });
+        btn.style.background = 'var(--global-theme-color)';
+        btn.style.color = 'white';
+      }
+    </script>
   {% endif %}
 </div>
