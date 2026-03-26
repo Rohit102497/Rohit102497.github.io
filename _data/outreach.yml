@@ -21,6 +21,12 @@ blogs:
     description: "An honest look at the motivations, doubts, and rewards behind choosing a PhD path."
 
 talks:
+  - title: "Probabilistic Reasoning Over Time"
+    event: "Artificial Intelligence, AI - Methods and applications (UiT, INF-2600, 10 ECTS)"
+    date: "March 24-26, 2026"
+    location: "Tromsø, Norway"
+    duration: "150 min"
+    event_url: "https://uit.no/utdanning/aktivt/emne/INF-2600"
   - title: "Irregularly Sampled Time Series"
     event: "Nattugla"
     date: "Oct 24, 2025"
