@@ -4,7 +4,7 @@
     - name: Full Name
       value: Rohit Agarwal
     - name: Position
-      value: AI Researcher, UiT The Arctic University of Norway
+      value: Applied Scientist, Nattugla
     - name: Address
       value: H0806 Smorbukklia 3, 9010 Tromsø, Norway
     - name: Email
@@ -41,9 +41,17 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Applied Scientist
+      institution: Nattugla
+      year: May 2026 - Now
+      description:
+        - Building AI solutions for real-time monitoring of elderly patients and alerting healthcare professionals.
+        - Developing computer vision models for activity recognition and anomaly detection in care environments.
+        - Designing efficient, edge-deployable deep learning architectures for resource-constrained devices.
+        - "Keywords: Python, PyTorch, Computer Vision, Edge AI, Model Compression, Quantisation, IoT"
     - title: AI Researcher
       institution: UiT The Arctic University of Norway, Bio-AI Lab
-      year: 2025 - Now
+      year: Jul 2025 - Apr 2026
       description:
         - Working on Large Language Models with a focus on parameter-efficient fine-tuning and low-rank adaptation (LoRA) techniques.
         - "Keywords: Python, PyTorch, LLM, PEFT, LoRA"
@@ -84,6 +92,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026
+      items:
+        - Funding of 75,000 NOK from Research Council of Norway for AI4Fertility Workshop
     - year: 2025
       items:
         - Golden Wings Award for the book <em>Cloud Computing for Everyone</em>
@@ -158,20 +169,26 @@
 - title: Academic Interests
   type: nested_list
   contents:
+    - title: Edge AI & Efficient Deep Learning
+      items:
+        - Model Compression, Quantisation, and Lightweight Architectures
+        - Embedded and IoT Deployment
+        - Real-time Inference on Resource-constrained Devices
+    - title: Computer Vision
+      items:
+        - Activity Recognition and Anomaly Detection
+        - Healthcare and Patient Monitoring
+        - Vision for Edge Devices
     - title: Online Learning
       items:
         - Haphazard Inputs and Varying Feature Space
         - Streaming Data Classification
         - Continual Learning
-    - title: Deep Learning
+    - title: Large Language Models
       items:
-        - Large Language Models (LLMs) and Parameter-Efficient Fine-Tuning
-        - Computer Vision
+        - Parameter-Efficient Fine-Tuning (PEFT) and LoRA
+        - Hallucination Detection and Mitigation
         - Natural Language Processing
-    - title: Other
-      items:
-        - Irregularly Sampled Time Series
-        - Scientific Machine Learning
 
 - title: Other Interests
   type: list

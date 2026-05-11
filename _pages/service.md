@@ -231,12 +231,42 @@ nav_order: 4
     <h2>Academic Service</h2>
   </div>
 
-  <p class="sv-sub">Reviewing</p>
+  <p class="sv-sub">Editor</p>
+  <ul class="sv-timeline">
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2026</span>
+      <div class="sv-timeline-body"><span class="sv-badge sv-badge-J">J</span> <a href="https://journals.uio.no/NMI/issue/view/1028" target="_blank">AI in Fertility Science</a> &mdash; Special Issue, Nordic Machine Intelligence</div>
+    </li>
+  </ul>
+
+  <p class="sv-sub">Program Committee</p>
+  <ul class="sv-timeline">
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2024</span>
+      <div class="sv-timeline-body">International Conference on Pattern Recognition (ICPR) &mdash; SPRCV Workshop</div>
+    </li>
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2023</span>
+      <div class="sv-timeline-body">International Conference on Neural Information Processing (ICONIP)</div>
+    </li>
+  </ul>
+
+  <p class="sv-sub">Grants &amp; Funding</p>
+  <ul class="sv-timeline">
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2026</span>
+      <div class="sv-timeline-body">75,000 NOK &mdash; Research Council of Norway &mdash; AI4Fertility Workshop</div>
+    </li>
+  </ul>
+
+  <p class="sv-sub">Reviewer</p>
   <ul class="sv-timeline">
     <li class="sv-timeline-item">
       <span class="sv-timeline-year">2026</span>
       <div class="sv-timeline-body">
-        <span class="sv-badge sv-badge-J">J</span> TMLR
+        <span class="sv-badge sv-badge-C">C</span> TMLR &ensp;
+        <span class="sv-badge sv-badge-C">C</span> BioNLP, ACL &times;3 &ensp;
+        <span class="sv-badge sv-badge-J">J</span> Journal of Grid Computing
       </div>
     </li>
     <li class="sv-timeline-item">
@@ -260,18 +290,6 @@ nav_order: 4
         <span class="sv-badge sv-badge-C">C</span> <a href="https://drive.google.com/file/d/1faP94c4oVwRi5Ui1D4a7RxL_IgQ8EAZO/view?usp=sharing" target="_blank">ICDEC</a> &times;2 &ensp;
         <span class="sv-badge sv-badge-J">J</span> Nordic Machine Intelligence (NMI)
       </div>
-    </li>
-  </ul>
-
-  <p class="sv-sub">Program Committee</p>
-  <ul class="sv-timeline">
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2024</span>
-      <div class="sv-timeline-body">International Conference on Pattern Recognition (ICPR) &mdash; SPRCV Workshop</div>
-    </li>
-    <li class="sv-timeline-item">
-      <span class="sv-timeline-year">2023</span>
-      <div class="sv-timeline-body">International Conference on Neural Information Processing (ICONIP)</div>
     </li>
   </ul>
 

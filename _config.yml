@@ -8,9 +8,9 @@ middle_name:
 last_name: Agarwal
 email: agarwal.102497@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  AI Researcher at UiT The Arctic University of Norway. Working on online learning, haphazard inputs, and large language models.
+  Applied Scientist at Nattugla. Building AI for elderly patient monitoring using computer vision, efficient deep learning, and edge AI.
 footer_text: >
-  Last Updated: 21st March 2026.
+  Last Updated: 11th May 2026.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌌 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

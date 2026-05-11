@@ -10,10 +10,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><i class="fa-solid fa-flask fa-sm"></i>&ensp;Bio-AI Lab</p>
-    <p><i class="fa-solid fa-building-columns fa-sm"></i>&ensp;Department of Computer Science</p>
-    <p><i class="fa-solid fa-graduation-cap fa-sm"></i>&ensp;UiT The Arctic University of Norway</p>
-    <p><i class="fa-solid fa-location-dot fa-sm"></i>&ensp;Tromsø, Norway</p>
+    <p><i class="fa-solid fa-briefcase fa-sm"></i>&ensp;Applied Scientist</p>
+    <p><i class="fa-solid fa-building fa-sm"></i><span>&ensp;<a href="https://nattugla.no/">Nattugla</a></span></p>
+    <p><i class="fa-solid fa-location-dot fa-sm"></i>&ensp;Norway</p>
 
 news: true # includes a list of news items
 journey: true # includes the career journey timeline
@@ -21,18 +20,19 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am an AI Researcher at the [Bio-AI Lab](https://www.bioailab.org/), UiT The Arctic University of Norway. My Ph.D. (2025) explored *Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces*, a problem I frame as [Haphazard Inputs](https://nva.sikt.no/registration/019a2ae0f768-2e0581b0-c814-45e4-8b79-fba6516a5299), where models must adapt as the number and type of available features change unpredictably over time.
+I am an Applied Scientist at [Nattugla](https://nattugla.no/), building AI systems that monitor elderly patients and alert healthcare professionals in real time. My work sits at the intersection of **computer vision**, **efficient deep learning**, and **edge AI** — designing models that are accurate enough to be clinically meaningful and lean enough to run on resource-constrained devices in care environments.
 
-Currently, I investigate hallucinations in large language models, studying when and why they fabricate facts. My broader research interests include:
+I hold a Ph.D. (2025) from UiT The Arctic University of Norway, where I explored *Scalable Online Deep Learning for Streaming Data with Variable Feature Spaces* — a problem I frame as [Haphazard Inputs](https://nva.sikt.no/registration/019a2ae0f768-2e0581b0-c814-45e4-8b79-fba6516a5299), where models must adapt as the number and type of available features change unpredictably over time.
 
-- Haphazard Inputs / Varying Feature Spaces
-- Scalable Online Deep Learning
-- Large Language Models
-- Time Series · Computer Vision · NLP
+My research interests span:
 
-Alongside my research, I authored [Cloud Computing for Everyone](https://bpbonline.com/products/cloud-computing-for-everyone) (BPB Online, 2025), an accessible guide from foundational cloud concepts to advanced practices, which received the [**Golden Wings Award**](https://www.goldenbookawards.com/shining-superstar/) 2025.
+- Computer vision for healthcare & activity monitoring
+- Online learning & haphazard inputs
+- Large language models
 
-Outside the lab, I can usually be found on a volleyball court, out on a trail, or in the water. The Norwegian Arctic landscape makes for a pretty compelling reason to stay active.
+I also authored [Cloud Computing for Everyone](https://bpbonline.com/products/cloud-computing-for-everyone) (BPB Online, 2025), which received the [**Golden Wings Award**](https://www.goldenbookawards.com/shining-superstar/) 2025.
+
+Outside work, I can usually be found on a volleyball court, out on a trail, or in the water.
 
 <style>
 /* ══════════════════════════════════════════

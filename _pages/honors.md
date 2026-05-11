@@ -129,6 +129,12 @@ nav_order: 6
   </div>
   <ul class="hn-timeline">
     <li class="hn-timeline-item">
+      <span class="hn-timeline-year">2026</span>
+      <div class="hn-timeline-body">
+        <strong>Research Grant</strong> &mdash; 75,000 NOK from Research Council of Norway for AI4Fertility Workshop
+      </div>
+    </li>
+    <li class="hn-timeline-item">
       <span class="hn-timeline-year">2025</span>
       <div class="hn-timeline-body">
         <strong>Golden Wings Award</strong> &mdash; <a href="https://www.goldenbookawards.com/shining-superstar/" target="_blank">Golden Book Awards</a> for the book <em>Cloud Computing for Everyone</em>

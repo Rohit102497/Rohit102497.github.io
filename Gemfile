@@ -9,7 +9,6 @@ group :jekyll_plugins do
     gem 'jekyll-imagemagick'
     gem 'jekyll-jupyter-notebook'
     gem 'jekyll-link-attributes'
-    gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-regex-replace'
     gem 'jekyll-scholar'
@@ -18,9 +17,12 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
+end
+group :minify do
+    gem 'mini_racer'
+    gem 'jekyll-minifier'
 end
 group :other_plugins do
     gem 'css_parser'
