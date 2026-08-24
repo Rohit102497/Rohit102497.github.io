@@ -255,6 +255,10 @@ nav_order: 4
   <ul class="sv-timeline">
     <li class="sv-timeline-item">
       <span class="sv-timeline-year">2026</span>
+      <div class="sv-timeline-body">150,000 NOK &mdash; Research Council of Norway &mdash; Bioscopy Conference 2026</div>
+    </li>
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2026</span>
       <div class="sv-timeline-body">75,000 NOK &mdash; Research Council of Norway &mdash; AI4Fertility Workshop</div>
     </li>
   </ul>
@@ -266,6 +270,8 @@ nav_order: 4
       <div class="sv-timeline-body">
         <span class="sv-badge sv-badge-C">C</span> TMLR &ensp;
         <span class="sv-badge sv-badge-C">C</span> BioNLP, ACL &times;3 &ensp;
+        <span class="sv-badge sv-badge-C">C</span> NeurIPS Evaluations &amp; Datasets &times;3 &ensp;
+        <span class="sv-badge sv-badge-C">C</span> NeurIPS &ensp;
         <span class="sv-badge sv-badge-J">J</span> Journal of Grid Computing
       </div>
     </li>

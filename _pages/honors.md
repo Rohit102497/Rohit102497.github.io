@@ -131,6 +131,12 @@ nav_order: 6
     <li class="hn-timeline-item">
       <span class="hn-timeline-year">2026</span>
       <div class="hn-timeline-body">
+        <strong>Research Grant</strong> &mdash; 150,000 NOK from Research Council of Norway for Bioscopy Conference 2026
+      </div>
+    </li>
+    <li class="hn-timeline-item">
+      <span class="hn-timeline-year">2026</span>
+      <div class="hn-timeline-body">
         <strong>Research Grant</strong> &mdash; 75,000 NOK from Research Council of Norway for AI4Fertility Workshop
       </div>
     </li>
