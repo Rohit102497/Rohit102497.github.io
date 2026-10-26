@@ -30,9 +30,11 @@ nav_order: 2
   <button class="filter-btn" data-filter="Book" data-color="#7b5ea7">Book</button>
   <button class="filter-btn" data-filter="Cloud Computing" data-color="#5e9e6e">Cloud Computing</button>
   <button class="filter-btn" data-filter="Haphazard Inputs" data-color="#e05c4b">Haphazard Inputs</button>
+  <button class="filter-btn" data-filter="Healthcare" data-color="#c2477a">Healthcare</button>
   <button class="filter-btn" data-filter="LLM" data-color="#3d7ebf">LLM</button>
   <button class="filter-btn" data-filter="NLP" data-color="#4a90a4">NLP</button>
   <button class="filter-btn" data-filter="Online Learning" data-color="#d4622a">Online Learning</button>
+  <button class="filter-btn" data-filter="Stats" data-color="#5a6acf">Stats</button>
   <button class="filter-btn" data-filter="Time Series" data-color="#c47e17">Time Series</button>
   <button class="filter-btn" data-filter="Vision" data-color="#2e8b57">Vision</button>
 </div>
@@ -270,6 +272,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const tagColors = {
     'Haphazard Inputs': '#e05c4b',
     'Online Learning':  '#d4622a',
+    'Healthcare':       '#c2477a',
+    'Stats':            '#5a6acf',
     'LLM':              '#3d7ebf',
     'NLP':              '#4a90a4',
     'Vision':           '#2e8b57',

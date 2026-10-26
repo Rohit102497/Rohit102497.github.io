@@ -135,11 +135,22 @@
       items:
         - "Aaron Celeste, Master Student, UiT Tromsø (2022–2023)"
         - "Arijit Das, Master Student, IIT ISM Dhanbad (2025–2026)"
+    - title: Interns
+      items:
+        - "Shuvam Swapnil Das, Intern, IIT ISM Dhanbad (Oct 2026–present)"
+        - "Happy Saxena, Intern, IIT ISM Dhanbad (Sep 2026–present)"
+        - "Shivansh Anand, Intern (Aug 2026–present)"
+        - "Aryan Prashant Dessai, Intern (2025)"
+        - "Karaka Prasanth Naidu, Intern (2024)"
+        - "Ayan Vishwakarma, Intern (2024)"
+        - "Gyanendra Das, Intern (2023)"
+        - "Saksham Agarwal, Intern (2023)"
     - title: Reviewer
       items:
         - "2023: ICDEC [C], Nordic Machine Intelligence [J]"
         - "2024: ICASSP [C], ICPR-SPRCV [C], IEEE TGRS [J], TMLR [J]"
         - "2025: ICLR [C]"
+        - "2026: TMLR [J], BioNLP-ACL [C], NeurIPS Evaluations & Datasets [C], NeurIPS [C], CVIP [C], Journal of Grid Computing [J]"
     - title: Program Committee
       items:
         - International Conference on Neural Information Processing (ICONIP), 2023

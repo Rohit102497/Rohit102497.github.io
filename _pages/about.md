@@ -16,6 +16,7 @@ profile:
 
 news: true # includes a list of news items
 journey: true # includes the career journey timeline
+book: true # includes the book strip below the journey
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---

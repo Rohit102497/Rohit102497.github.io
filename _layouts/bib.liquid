@@ -18,6 +18,8 @@
             alt=entry.preview
           %}
         {% endif %}
+      {% elsif entry.coming_soon %}
+        <div class="preview preview-coming-soon z-depth-1 rounded">Paper coming soon online</div>
       {% endif %}
     </div>
   {% endif %}

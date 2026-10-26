@@ -686,6 +686,20 @@ footer.sticky-bottom {
       .preview {
       }
 
+      .preview-coming-soon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 4 / 3;
+        padding: 0.5rem;
+        border: 1px dashed var(--global-divider-color);
+        color: var(--global-text-color-light);
+        font-size: 0.75rem;
+        font-style: italic;
+        text-align: center;
+        line-height: 1.3;
+      }
+
       .abbr {
         margin-bottom: 0.5rem;
 

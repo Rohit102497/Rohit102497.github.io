@@ -112,6 +112,27 @@ nav_order: 4
 }
 .sv-timeline-body { flex: 1; font-size: 0.88rem; line-height: 1.6; }
 
+/* ── Supervision people rows ─────────────────────────────────────────── */
+.sv-person { margin-bottom: 0.35rem; }
+.sv-person:last-child { margin-bottom: 0; }
+.sv-person-name { font-weight: 700; }
+.sv-person-meta { color: var(--global-text-color-light); font-size: 0.82rem; }
+.sv-person-now { font-size: 0.78rem; font-style: italic; color: #5e9e6e; white-space: nowrap; }
+.sv-person-now::before { content: '\2192\00a0'; }
+.sv-pill {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.08rem 0.45rem;
+  border-radius: 8px;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  background: rgba(61,126,191,0.13);
+  color: #3d7ebf;
+}
+
 /* ── Conference / Journal badges ─────────────────────────────────────── */
 .sv-badge {
   display: inline-block;
@@ -268,10 +289,11 @@ nav_order: 4
     <li class="sv-timeline-item">
       <span class="sv-timeline-year">2026</span>
       <div class="sv-timeline-body">
-        <span class="sv-badge sv-badge-C">C</span> TMLR &ensp;
         <span class="sv-badge sv-badge-C">C</span> BioNLP, ACL &times;3 &ensp;
         <span class="sv-badge sv-badge-C">C</span> NeurIPS Evaluations &amp; Datasets &times;3 &ensp;
         <span class="sv-badge sv-badge-C">C</span> NeurIPS &ensp;
+        <span class="sv-badge sv-badge-C">C</span> CVIP &ensp;
+        <span class="sv-badge sv-badge-J">J</span> TMLR &ensp;
         <span class="sv-badge sv-badge-J">J</span> Journal of Grid Computing
       </div>
     </li>
@@ -308,19 +330,53 @@ nav_order: 4
     <i class="fa-solid fa-user-graduate"></i>
     <h2>Supervision</h2>
   </div>
-  <div class="sv-card-grid">
-    <div class="sv-card">
-      <div class="sv-card-period">2025 &ndash; 2026</div>
-      <div class="sv-card-title">Arijit Das</div>
-      <div class="sv-card-sub">Master&rsquo;s Student<br>IIT (ISM) Dhanbad</div>
-    </div>
-    <div class="sv-card">
-      <div class="sv-card-period">2022 &ndash; 2023</div>
-      <div class="sv-card-title">Aaron Celeste</div>
-      <div class="sv-card-sub">Master&rsquo;s Student<br>UiT The Arctic University of Norway</div>
-      <a href="https://munin.uit.no/handle/10037/29335" target="_blank" class="sv-card-link">Thesis &rarr;</a>
-    </div>
-  </div>
+  <p class="sv-sub">Master&rsquo;s Thesis</p>
+  <ul class="sv-timeline">
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2025&ndash;26</span>
+      <div class="sv-timeline-body">
+        <div class="sv-person"><span class="sv-person-name">Arijit Das</span> <span class="sv-person-meta">&middot; IIT (ISM) Dhanbad</span> <span class="sv-person-now">Now at Samsung</span></div>
+      </div>
+    </li>
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2022&ndash;23</span>
+      <div class="sv-timeline-body">
+        <div class="sv-person"><span class="sv-person-name">Aaron Celeste</span> <span class="sv-person-meta">&middot; UiT The Arctic University of Norway</span> &middot; <a href="https://munin.uit.no/handle/10037/29335" target="_blank">Thesis</a> <span class="sv-person-now">Now at UiT</span></div>
+      </div>
+    </li>
+  </ul>
+
+  <p class="sv-sub">Interns</p>
+  <ul class="sv-timeline">
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2026</span>
+      <div class="sv-timeline-body">
+        <div class="sv-person"><span class="sv-person-name">Shuvam Swapnil Das</span> <span class="sv-person-meta">&middot; IIT (ISM) Dhanbad &middot; Oct 2026 &ndash;</span> <span class="sv-pill">Ongoing</span></div>
+        <div class="sv-person"><span class="sv-person-name">Happy Saxena</span> <span class="sv-person-meta">&middot; IIT (ISM) Dhanbad &middot; Sep 2026 &ndash;</span> <span class="sv-pill">Ongoing</span></div>
+        <div class="sv-person"><span class="sv-person-name">Shivansh Anand</span> <span class="sv-person-meta">&middot; Aug 2026 &ndash;</span> <span class="sv-pill">Ongoing</span></div>
+      </div>
+    </li>
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2025</span>
+      <div class="sv-timeline-body">
+        <div class="sv-person"><span class="sv-person-name">Aryan Prashant Dessai</span></div>
+      </div>
+    </li>
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2024</span>
+      <div class="sv-timeline-body">
+        <div class="sv-person"><span class="sv-person-name">Karaka Prasanth Naidu</span> <span class="sv-person-now">Now at Amazon</span></div>
+        <div class="sv-person"><span class="sv-person-name">Ayan Vishwakarma</span> <span class="sv-person-now">Now at Google</span></div>
+      </div>
+    </li>
+    <li class="sv-timeline-item">
+      <span class="sv-timeline-year">2023</span>
+      <div class="sv-timeline-body">
+        <div class="sv-person"><span class="sv-person-name">Gyanendra Das</span></div>
+        <div class="sv-person"><span class="sv-person-name">Saksham Agarwal</span> <span class="sv-person-now">Now at Microsoft</span></div>
+      </div>
+    </li>
+  </ul>
 </section>
 
 
